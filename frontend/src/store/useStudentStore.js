@@ -4,7 +4,7 @@ export const useStudentStore = create((set) => ({
   students: [],
   fetchStudents: async () => {
     try {
-      const response = await fetch('https://instinctive-studio-327h.vercel.app/api/students');
+      const response = await fetch('https://instinctive-studio-blue.vercel.app/api/students');
       if (response.ok) {
         const data = await response.json();
         console.log(data)
@@ -19,7 +19,7 @@ export const useStudentStore = create((set) => ({
   addStudent: async (newStudent) => {
     // console.log(newStudent)
     try {
-      const response = await fetch('https://instinctive-studio-327h.vercel.app/api/students', {
+      const response = await fetch('https://instinctive-studio-blue.vercel.app/api/students', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
